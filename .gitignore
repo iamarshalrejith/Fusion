@@ -1,25 +1,26 @@
-cat > .gitignore << 'EOF'
-# Build artifacts
+# Build output
+build/
+bin/
+
+# Compiled binaries and disk images
 *.bin
 *.img
 *.iso
-*.o
 *.elf
+*.o
 *.map
 
-# QEMU
+# Debug and log files
 *.log
 
-# OS/editor files
+# IDE and editor files
 .vscode/
 .idea/
 *.swp
 *.swo
+*~
 
-# macOS
+# OS-generated files
 .DS_Store
-
-# Windows
 Thumbs.db
 Desktop.ini
-EOF
